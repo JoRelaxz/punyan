@@ -7,47 +7,53 @@
     <title>Website Kelas XI TBSM 2</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="lokasi logo" alt="Logo Kelas XI TBSM 2">
-                <p>XI TBSM 2</p>
+        <nav class="container">
+            <div class="items">
+                <div class="item-kiri">
+                    <img class="logo" src="./assets/images/logo.jpg" alt="logo sekolah"> 
+                    <p>SMK Bina Industri</p>
+                </div>
+                <div class="item-kanan">   
+                    <a href="#" class="red">Home</a>
+                    <a href="#" class="green">About</a>
+                    <a href="#" class="purple">Work</a>
+                    <a href="#" class="yellow">Contact</a>
+                </div>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Materi</a></li>
-                <li><a href="#">Tugas</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </nav>
+          </nav>
     </header>
 
+    <div class="container-2">
     <section class="hero">
         <div class="hero-content">
-            <h1>Selamat Datang di Kelas XI TBSM 2</h1>
-            <p>Tempat belajar bersama tentang Teknik dan Bisnis Sepeda Motor</p>
-            <a href="#materi" class="btn">Mulai Belajar</a>
+            <h1>Selamat Datang di SMK Bina Industri</h1>
+            <p>Tempat belajar dan berkembang bersama dengan berbagai jurusan dan ekstrakulikuler yang menarik </p>
+            <a href="#materi" class="btn">Mulai Bergabung</a>
         </div>
     </section>
+    </div>
 
     <section id="materi" class="materi">
         <h2>Materi Pembelajaran</h2>
         <div class="materi-list">
-            <div class="materi-item">
+            <a href="#" class="materi-item">
                 <h3>Pengenalan Mesin</h3>
                 <p>Pelajari dasar-dasar mesin sepeda motor.</p>
-            </div>
-            <div class="materi-item">
+            </a>
+            <a href="#" class="materi-item">
                 <h3>Perawatan Kendaraan</h3>
                 <p>Panduan untuk merawat kendaraan dengan baik.</p>
-            </div>
-            <div class="materi-item">
+            </a>
+            <a href="#"  class="materi-item">
                 <h3>Elektronika Otomotif</h3>
                 <p>Materi tentang sistem kelistrikan sepeda motor.</p>
-            </div>
+            </a>
         </div>
     </section>
 
