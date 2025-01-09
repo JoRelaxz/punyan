@@ -1,67 +1,115 @@
-/* Reset dasar */
++/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+  
 /* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    background: rgb(93,0,135);
-    background: linear-gradient(90deg, rgba(93,0,135,1) 10%, rgba(255,0,121,1) 90%);
+    background-image: url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* Header */
-header {
-    background-color: #2c3e50;
-    padding: 20px;
+
+.container .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 1.7rem;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container .items {
+
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-nav .logo img {
-    width: 150px;
+.items .item-kiri {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px; 
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+.items .item-kanan {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+.container .items a {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 1.7rem;
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
+  }
+  
+  /* Displaying different color on different element */
 
-nav ul li a:hover {
-    background-color: #3498db;
-    border-radius: 5px;
-}
+  .container .items a:hover {
+    transition-duration: 1.5s;
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 13px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 42px rgb(255, 255, 255),
+      0 0 82px rgb(255, 255, 255), 0 0 92px rgb(255, 255, 255),
+      0 0 150px rgb(255, 255, 255); 
+  }
+  
+  .container .items {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-left: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 75px;
+  }
 
+  @media screen and (max-width: 670px) {
+    .container .items {
+      display: grid;
+    }
+  }
+
+  .hero {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.8rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-left: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 670px) {
+    .hero {
+      display: grid;
+    }
+  }
+  
 /* Hero Section */
-.hero {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+.container-2 {
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: rgb(253, 253, 253);
 }
 
 .hero h1 {
@@ -109,8 +157,10 @@ nav ul li a:hover {
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    color: black;
     margin: 10px;
-    width: 30%;
+    text-decoration: none;
+    width: 27%;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
